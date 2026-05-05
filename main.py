@@ -54,7 +54,7 @@ print(f"Step 4 – Passengers with ID >= 500: {len(high_passenger_number_df)} ro
 print(high_passenger_number_df.head(), "\n")
 
 # ── Step 5: .query() – females and children under 15 ─────────────────────────
-query_string = 'Sex == "female" or Age < 15'
+query_string = 'Sex == "female" or Age <= 15'
 female_children_df = df.query(query_string)
 
 print(f"Step 5 – Females + children under 15: {len(female_children_df)} rows")
